@@ -1,13 +1,10 @@
 # gtest-fuser
 
-Google removed support for generating a single-file googletest between versions 1.11 and 1.12.
-This repository provides unofficial fused versions for releases after 1.11.
-
 > [!WARNING]
 > Unofficial single-source single-header for the googletest library.
 
-> [!WARNING]
-> You must comply with the [googletest LICENSE](https://github.com/google/googletest/blob/main/LICENSE) to use these files.
+Google [removed support](https://github.com/google/googletest/commit/47f819c3) for generating a single-file googletest with version 1.12.
+This repository provides unofficial fused versions for releases after 1.11.
 
 1. Download the version you want from [`_generated`](https://github.com/cwpearson/gtest-fuser/tree/master/_generated)
 2. Provide your own main function, something like this:
@@ -28,3 +25,9 @@ EOF
 ```bash
 g++ --std=c++14 -I gtest-<version> main.cpp gtest-<version>/gtest-all.cc
 ```
+
+## Legal
+
+> [!INFO]
+> Users should take care to respect the respective googletest licences [(current version)](https://github.com/google/googletest/blob/main/LICENSE).
+> The license for each release is included in this repository as well.

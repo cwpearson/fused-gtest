@@ -26,5 +26,5 @@ EOF
 3. Compile together:
 
 ```bash
-g++ --std=c++14 -I gtest-<version> main.cpp gtest-<version>/gtest-all.cpp
+g++ --std=c++14 -I gtest-<version> main.cpp gtest-<version>/gtest-all.cc
 ```

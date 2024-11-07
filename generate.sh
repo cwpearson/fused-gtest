@@ -20,7 +20,7 @@ for version in "${VERSIONS[@]}"; do
     # created fused source
     python -m fuse \
       googletest-${version}/googletest/src/gtest-all.cc \
-      ${OUT_DIR}/gtest/gtest-all.cpp \
+      ${OUT_DIR}/gtest/gtest-all.cc \
       googletest-${version}/googletest googletest-${version}/googletest/include
 
     # create fused header
@@ -30,7 +30,7 @@ for version in "${VERSIONS[@]}"; do
       googletest-${version}/googletest googletest-${version}/googletest/include
 
     # test compilation
-    g++ --std=c++14 -I ${OUT_DIR} googletest-${version}/googletest/src/gtest_main.cc ${OUT_DIR}/gtest/gtest-all.cpp
+    g++ --std=c++14 -I ${OUT_DIR} googletest-${version}/googletest/src/gtest_main.cc ${OUT_DIR}/gtest/gtest-all.cc
     ./a.out
 
     # Include license file

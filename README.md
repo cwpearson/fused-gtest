@@ -28,6 +28,5 @@ g++ --std=c++14 -I gtest-<version> main.cpp gtest-<version>/gtest-all.cc
 
 ## Legal
 
-> [!INFO]
-> Users should take care to respect the respective googletest licences [(current version)](https://github.com/google/googletest/blob/main/LICENSE).
-> The license for each release is included in this repository as well.
+Users should take care to respect the respective googletest licences [(current version)](https://github.com/google/googletest/blob/main/LICENSE).
+The license for each release is included in this repository as well.

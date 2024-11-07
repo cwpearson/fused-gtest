@@ -1,4 +1,4 @@
-# gtest-fuser
+# fused-gtest
 
 > [!WARNING]
 > Unofficial single-source single-header for the googletest library.
